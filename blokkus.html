@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Blokkus</title>
+	<!-- Icon -->
+	<link rel="icon" href="resources/static/icon.ico">
+	<!-- CSS -->
+	<link rel="stylesheet" href="resources/css/blokkus.css">
+	<!-- Custom fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Mako&display=swap" rel="stylesheet">
+	<!-- External Libraries -->
+	<script src="vendors/jquery/jquery-3.4.1.min.js"></script>
+	<script src="vendors/camera-controls/camera-controls.min.js"></script>
+	<!-- JS -->
+	<script type="module" src="resources/js/blokkus.js"></script>
+</head>
+
+<body>
+	<div class="floating container mt-1 v-flex align-right fixed-right fixed-top">
+		<a href="https://www.ultraboardgames.com/blokus/game-rules.php" target="_blank">Rules of the game</a>
+		<div class="v-flex inline">
+			<img src="resources/static/github_logo.png" alt="Github Logo">		
+			<a href="https://github.com/amosyu2000/blokkus" target="_blank">Code</a>
+		</div>
+	</div>
+	<div class="floating container v-flex align-left fixed-left fixed-bottom">
+		<div class="container-white v-flex align-left">
+			<p class="text-black">Your move,</p>
+			<p id="player-name" class="font-large text-black w-100 overflow-hidden"></p>
+			<p id="player-score" class="text-black"></p>
+		</div>
+		<p>[Z] Rotate Piece</p>
+		<p>[X] Flip Piece</p>
+		<p>[Scroll] Zoom In/Out</p>
+		<button id="toggleView" class="btn" onclick="toggleView()">View from Above</button>
+	</div>
+	<button id="forfeitBtn" class="floating container fixed-right fixed-bottom btn btn-red" onclick="forfeit()">
+		Forfeit
+	</button>
+	<p class="floating fixed-top w-100 text-center mt-1">
+		Built by <a class="link" href="https://andytule.github.io" target="_blank">Andy Le</a>
+		and <a class="link" href="https://amosyu2000.github.io" target="_blank">Amos Yu</a>. 
+		Inspired by <a class="link" href="https://www.mattelgames.com/en-ca/blokus" target="_blank">Blokus</a> 
+		from Mattel Games.
+	</p>
+</body>
+
+</html>
